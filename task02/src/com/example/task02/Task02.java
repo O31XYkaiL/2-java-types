@@ -1,12 +1,18 @@
 package com.example.task02;
 
 public class Task02 {
-
     public static String solution(String input) {
+        long var = Long.parseLong(input);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        if (var >= Byte.MIN_VALUE && var <= Byte.MAX_VALUE) {
+            return "byte";
+        } else if (var >= Short.MIN_VALUE && var <= Short.MAX_VALUE) {
+            return "short";
+        } else if (var >= Integer.MIN_VALUE && var <= Integer.MAX_VALUE) {
+            return "int";
+        } else {
+            return "long";
+        }
     }
 
     public static void main(String[] args) {
@@ -17,5 +23,4 @@ public class Task02 {
         System.out.println(result);
          */
     }
-
 }

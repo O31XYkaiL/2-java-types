@@ -1,12 +1,13 @@
 package com.example.task06;
 
 public class Task06 {
-
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int sum = x + y;
+        if (sum < 0) {
+            return Integer.toString(sum).length() - 1;
+        } else {
+            return Integer.toString(sum).length();
+        }
     }
 
     public static void main(String[] args) {
@@ -17,5 +18,4 @@ public class Task06 {
         System.out.println(result);
         */
     }
-
 }
